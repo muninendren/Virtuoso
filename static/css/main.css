@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    background-color: #7AB2B2;
+    margin-top: 0%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #112a2a;
+    text-shadow: 0px 0px 50px #506060;
+    
+    box-shadow:0px 0px 10px black;
+    border-radius: 0px 0px 30px 0px;
+    
+}
+main{
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.mid{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#caps{
+    font-size: 20px;
+    
+    padding-top: 0;
+    margin-top: 0;
+    position: relative;
+    top: -3px;
+}
+.def{
+    margin-top: 0;
+    position: relative;
+    bottom: 15px;
+    
+}
+.style{
+    height: 200px;
+    width: 40px;
+    background-color: #112a2a;
+    position: absolute;
+    right: 0;
+    top:40px;
+    z-index: -1;
+    border-radius: 0px 0px 0px 30px;
+    text-align: center;
+}
+
+
+#word{
+    color: antiquewhite;
+    padding-left: 8px;
+}
+
+footer{
+    text-align: center;
+    bottom: 5px;
+   
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: #506060;
+    height: 35px;
+    color: antiquewhite;
+}
+
+.assistant-container{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    
+}
+
+#assistant-video{
+    height: 350px;
+    padding: 10px;
+    
+
+}
+.former{
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-bottom: 0;
+}
+
+#wid{
+    width: 400px;
+}
+
+.button{
+    margin:auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 2px;
+}
+
+button:hover{
+    padding: 10px;
+    background-color: #112a2a;
+    color: beige;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+img{
+    size: 300px;
+}
+.sep{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}

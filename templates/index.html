@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Web App</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <!-- Add any additional CSS or meta tags here -->
+</head>
+<body>
+    <header>
+        <div class="name">
+            
+        <span id="caps"><h1>V </h1></span>
+        
+        <h1 class="mid"> I R T U O S </h1>
+        <span id="caps"><h1> O</h1></span>
+        </div>
+        <h6 class="def">AN VIRTUAL AI TO ASSIST YOU </h6>
+    </header>
+    <div class="style">
+        <br>
+        <br><br>
+        <br>
+        <h1 id="word">A</h1>
+        <h1 id="word">I</h1>
+        
+    </div>
+    <main>
+        <div>
+            <!-- <h2>Input Form</h2> -->
+            <div class="assistant-container">
+                <video id="assistant-video" controls autoplay>
+                    <source src="{{ url_for('static', filename='videos/outputt.mp4') }}" type="video/mp4">
+                    <!-- Fallback content here -->
+                    Your browser does not support the video tag.
+
+                </video>
+                <form method="POST" action="{{ url_for('process') }}" id="input-form">
+                    <div class="former">
+                        <label for="input-text">Enter Your Query:</label>
+                        <input id="wid" type="text" id="input-text" name="input-text" required>
+                        VOICE:
+                        <button id="startBtn">Start </button>
+                        
+                        <button id="stop" type="button">stop</button>
+                        <p id="output"></p>
+
+                       
+                    </div>
+                    <br>
+                    <div class="button">
+                        <div class="sep">
+                            <button type="submit">Submit</button>
+                            <br>
+                            <button id="clear" type="submit">Clear</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+    
+            
+        </div>
+        <!-- <div>
+            <h2>Output</h2>
+            {% if text_response %}
+                <p>{{ text_response }}</p>
+            {% endif %}
+            <!-- Add any additional output elements here 
+        </div> -->
+    </main>
+    
+
+<script src="../static/js/main.js"></script>
+
+    <footer>
+        <p>&copy; Premnath_Sukifer_Muninendren</p>
+    </footer>
+    <!-- Add any additional scripts or footer content here -->
+</body>
+</html>
+
+
+
+
+<!-- 
+
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h2>template</h2>
+
+{% endblock %}
+ -->
